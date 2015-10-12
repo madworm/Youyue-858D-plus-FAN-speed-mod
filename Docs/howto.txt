@@ -1,0 +1,52 @@
+
+SAFETY WARNING:
+===============
+
+The device You are about to modify has exposed 240V parts when the AC cord is plugged in.
+
+Touching any of these parts may cause you to die (for real). This is final.
+
+Be EXTREMELY careful when following the installation instructions below, or let someone
+else with suitable qualifications do it.
+
+Avoid making adjustments on a live circuit. If you have to, use an isolation-transformer
+(one hand only).
+
+I shall not be held responsible for any damages that may result from following
+the steps below.
+
+
+Installation:
+=============
+
+* UNPLUG the AC cord.
+
+* REMOVE R3 (10k, SMD 0805) on the main circuit board BEFORE adding this mod. This disconnects
+  the FAN voltage sensing (default state) going to PC5 (pin #28).
+
+* Add a 1 Ohm current sense resistor as shown.
+
+* Connect the mod-board to the ATmega168/328 as shown.
+
+
+From here on, the circuitry needs to be powered.
+This bears the risk of lethal electrical shock. Only use insulated tools (screwdrivers...)
+
+
+* Set Vref to about 70mV, measured at the center-tab of the potentiometer.
+
+* Use an oscilloscope to verify the signal after the comparator (LM2904 pin #1).
+  It should show short square pulses for all fan speeds.
+  Adjust Vref for best overall performance.
+
+* Check the signal after the RC low-pass filter (LM2904 pin #5): flat-line.
+
+* Adjust the gain to acchieve an output voltage of about 5V (Vout) when the fan 
+  spins at its highest speed. Make sure the opamp does not saturate.
+  The voltage should show immediate response to fan-speed changes.
+
+* If everything appears to work, de-energize everything & reassemble.
+
+* You may have to adjust the fan-speed configuration parameters.
+  Consult the manual.
+
