@@ -4,6 +4,8 @@ Youyue-858D+ FAN-speed mod:
 
 LAYOUT FILES: Proper commutation-based speed detection for the BLDC fan.
 
+[![Adapter front](/gerber_files/PNGs/youyue-858d-plus-fan-speed-mod__front_purple.png)](/gerber_files/PNGs/youyue-858d-plus-fan-speed-mod__front_purple.png)
+
 
 ---
 
