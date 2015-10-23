@@ -19,9 +19,9 @@ the steps below.
 Installation:
 =============
 
-* UNPLUG the AC cord.
+* !! UNPLUG the AC cord.
 
-* REMOVE R3 (10k, SMD 0805) on the main circuit board BEFORE adding this mod. This disconnects
+* !! REMOVE R3 (10k, SMD 0805) on the main circuit board BEFORE adding this mod. This disconnects
   the FAN voltage sensing (default state) going to PC5 (pin #28).
 
 * Add a 1 Ohm current sense resistor as shown.
@@ -41,12 +41,12 @@ This bears the risk of lethal electrical shock. Only use insulated tools (screwd
 
 * Check the signal after the RC low-pass filter (LM2904 pin #5): flat-line.
 
-* Adjust the gain to acchieve an output voltage of about 2.5V (Vout) when the fan 
-  spins at its highest speed. Make sure the opamp does not saturate.
+* Adjust the gain to acchieve an output voltage (LM2904 pin #7) of about 2.2V (Vout)
+  when the fan spins at its highest speed. Make sure the opamp does not saturate.
   The voltage should show immediate response to fan-speed changes.
 
 * If everything appears to work, de-energize everything & reassemble.
 
-* You may have to adjust the fan-speed configuration parameters.
-  Consult the manual.
+* You will have to adjust the fan-speed configuration parameters & likely recompile.
+  Consult the manual. Use the "fan-test" mode to find good low/high values.
 
