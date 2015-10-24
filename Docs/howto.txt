@@ -39,6 +39,9 @@ This bears the risk of lethal electrical shock. Only use insulated tools (screwd
   It should show short square pulses for all fan speeds.
   Adjust Vref for best overall performance.
 
+  If you don't have an oscilloscope, temporarlity connect an LED + resistor between pins #1 and #4
+  on the LM2904 and adjust Vref to get a "faint glow".
+
 * Check the signal after the RC low-pass filter (LM2904 pin #5): flat-line.
 
 * Adjust the gain to acchieve an output voltage (LM2904 pin #7) of about 2.2V (Vout)
