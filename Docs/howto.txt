@@ -33,20 +33,29 @@ From here on, the circuitry needs to be powered.
 This bears the risk of lethal electrical shock. Only use insulated tools (screwdrivers...)
 
 
-* Set Vref to about 70mV, measured at the center-tab of the potentiometer.
+* Set Vref to about 70mV to get started, measured at the center-tab of the potentiometer.
 
 * Ideally, use an oscilloscope to verify the signal after the comparator (LM2904 pin #1).
   It should show short square pulses for all fan speeds.
   Adjust Vref for best overall performance.
 
-  If you don't have an oscilloscope, temporarlity connect an LED + resistor between pins #1 and #4
+  If you don't have an oscilloscope, (temporarlity) connect an LED + resistor between pins #1 and #4
   on the LM2904 and adjust Vref to get a "faint glow". (Later boards have an on-board LED).
 
 * Check the signal after the RC low-pass filter (LM2904 pin #5): flat-line.
 
-* Adjust the gain to acchieve an output voltage (LM2904 pin #7) of about 2.2V (Vout)
+* Adjust the gain to acchieve an output voltage (LM2904 pin #7) of about 2.44V (Vout)
   when the fan spins at its highest speed. Make sure the opamp does not saturate.
   The voltage should show immediate response to fan-speed changes.
+
+* Tweak all settings until you end up with these values in fan-test mode:
+
+  Fan-speed : 	stall	min	max
+  Display   :	450	550	1000
+  Vout / V  :	1.10	1.34	2.44
+
+  Use a piece of paper, folded a couple of times, to stop the fan in fan-test mode.
+  It should be very easy to stop.
 
 * If everything appears to work, de-energize everything & reassemble.
 
