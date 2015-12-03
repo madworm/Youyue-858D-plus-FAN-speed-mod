@@ -10,8 +10,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Youyue 858D+ FAN-speed mod"
-Date "2015-10-24"
-Rev "0.11"
+Date "2015-12-03"
+Rev "0.12"
 Comp "2015 - blog.spitzenpfeil.org"
 Comment1 ""
 Comment2 ""
@@ -72,17 +72,6 @@ F 2 "my_parts:MADW__TC33X-POT" H 1900 6400 60  0001 C CNN
 F 3 "" H 1900 6400 60  0000 C CNN
 	1    1900 6400
 	0    1    -1   0   
-$EndComp
-$Comp
-L CP C2
-U 1 1 5617F9EF
-P 4100 1800
-F 0 "C2" H 4125 1900 50  0000 L CNN
-F 1 "1µ" H 4125 1700 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4138 1650 30  0001 C CNN
-F 3 "" H 4100 1800 60  0000 C CNN
-	1    4100 1800
-	1    0    0    -1  
 $EndComp
 $Comp
 L C C1
@@ -580,4 +569,15 @@ Wire Notes Line
 	4550 7200 4550 4900
 Wire Notes Line
 	4550 4900 3500 4900
+$Comp
+L C C2
+U 1 1 56601AF9
+P 4100 1800
+F 0 "C2" H 4125 1900 50  0000 L CNN
+F 1 "1µF" H 4125 1700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4138 1650 50  0001 C CNN
+F 3 "" H 4100 1800 50  0000 C CNN
+	1    4100 1800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

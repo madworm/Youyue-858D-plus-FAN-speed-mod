@@ -1,4 +1,4 @@
-update=Fri 09 Oct 2015 06:49:52 PM CEST
+update=Thu 03 Dec 2015 11:34:50 AM CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -33,3 +33,13 @@ LibName1=/home/robert/Arduino/KiCAD/LIBS/my_parts
 LibName2=/usr/share/kicad/library-repos/kicad-library/library/conn
 LibName3=/usr/share/kicad/library-repos/kicad-library/library/device
 LibName4=/usr/share/kicad/library-repos/kicad-library/library/power
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

@@ -1,4 +1,4 @@
-(kicad_pcb (version 4) (host pcbnew "(2015-10-21 BZR 6273, Git ad10218)-product")
+(kicad_pcb (version 4) (host pcbnew "(2015-12-01 BZR 6337, Git 6f5a49b)-product")
 
   (general
     (links 32)
@@ -15,8 +15,8 @@
   (page A4)
   (title_block
     (title "Youyue 858D+ FAN-speed mod")
-    (date 2015-10-24)
-    (rev 0.11.a)
+    (date 2015-12-03)
+    (rev 0.12.a)
     (company "2015 - blog.spitzenpfeil.org")
   )
 
@@ -162,12 +162,12 @@
     (at 187.6 43.1)
     (descr "Capacitor SMD 0805, hand soldering")
     (tags "capacitor 0805")
-    (path /5617F9EF)
+    (path /56601AF9)
     (attr smd)
     (fp_text reference C2 (at 1.3 -1.7) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1µ (at 0 2.1) (layer F.Fab) hide
+    (fp_text value 1µF (at 0 2.1) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.3 -1) (end 2.3 -1) (layer F.CrtYd) (width 0.05))
@@ -980,7 +980,7 @@
 
   (gr_line (start 188.9 24.1) (end 193.25 24.1) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 188.9 28.05) (end 188.9 24.1) (layer Edge.Cuts) (width 0.1))
-  (gr_text V0.11.a (at 192 36.5 90) (layer B.SilkS) (tstamp 56183134)
+  (gr_text V0.12.a (at 192 36.5 90) (layer B.SilkS) (tstamp 56183134)
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (gr_text "Youyue 858D+ FAN-speed mod\n2015 - blog.spitzenpfeil.org" (at 189 41.25 90) (layer B.SilkS)
