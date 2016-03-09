@@ -33,10 +33,12 @@ From here on, the circuitry needs to be powered.
 This bears the risk of lethal electrical shock. Only use insulated tools (screwdrivers...)
 
 
-* Set Vref to about 70mV to get started, measured at the center-tab of the potentiometer.
+* Set Vref to about 70mV to get started, measured at the center-tab of the Vref-potentiometer
+  (pointing towards R1).
 
 * Ideally, use an oscilloscope to verify the signal after the comparator (LM2904 pin #1).
   It should show short square pulses for all fan speeds.
+
   Adjust Vref for best overall performance.
 
   If you don't have an oscilloscope, (temporarlity) connect an LED + resistor between pins #1 and #4
